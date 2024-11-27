@@ -1,0 +1,24 @@
+.main {
+  height: 100px;
+  background-color: darkolivegreen;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.main nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.main nav ul li a {
+  text-decoration: none;
+  color: black;
+}

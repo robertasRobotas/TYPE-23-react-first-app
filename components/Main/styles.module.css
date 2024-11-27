@@ -1,0 +1,22 @@
+.main {
+  min-height: calc(100vh - 180px);
+  padding: 2rem;
+  background-color: burlywood;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
