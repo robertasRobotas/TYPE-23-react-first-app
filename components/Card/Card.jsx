@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import styles from "./styles.module.css";
 
 const Card = ({ id, title, imgUrl, onResultDelete }) => {
@@ -14,7 +13,7 @@ const Card = ({ id, title, imgUrl, onResultDelete }) => {
       }}
       className={styles.main}
     >
-      <Image
+      <img
         alt="character"
         width={100}
         height={100}
