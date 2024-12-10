@@ -7,14 +7,14 @@ import { useState } from "react";
 const Main = ({ series, setSeries }) => {
   const [isShowProducts, setShowProduct] = useState(false);
 
-  const removeCard = (id) => {
-    const filteredCards = series.filter((s) => s.id !== id);
-    setSeries(filteredCards);
-  };
+  // const removeCard = (id) => {
+  //   const filteredCards = series.filter((s) => s.id !== id);
+  //   setSeries(filteredCards);
+  // };
 
   return (
     <div className={styles.main}>
-      <Button
+      {/* <Button
         title="Add"
         type="SUCCESS"
         onClick={() => {
@@ -27,10 +27,9 @@ const Main = ({ series, setSeries }) => {
         onClick={() => {
           setShowProduct(false);
         }}
-      />
+      /> */}
 
       {series ? (
-        isShowProducts &&
         series.map((d) => {
           return (
             <Card
@@ -38,7 +37,7 @@ const Main = ({ series, setSeries }) => {
               key={d.id}
               title={d.title.split(" ").slice(0, 3).join(" ")}
               imgUrl={d.image}
-              onResultDelete={removeCard}
+              // onResultDelete={removeCard}
             />
           );
         })

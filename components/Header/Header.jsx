@@ -1,6 +1,13 @@
+import { useState } from "react";
 import styles from "./styles.module.css";
 
-const Header = ({ links }) => {
+const Header = () => {
+  const [links, setLinks] = useState([
+    { url: "about", title: "About" },
+    { url: "main", title: "Main" },
+    { url: "contacts", title: "Contacts" },
+  ]);
+
   return (
     <header className={styles.main}>
       <div className={styles.logo}>Some company</div>
